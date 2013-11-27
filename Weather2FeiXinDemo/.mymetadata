@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="Weather2FeiXinDemo"
+  id="myeclipse.1385438078112"
+  context-root="/Weather2FeiXinDemo"
+  j2ee-spec="1.4"
+  archive="Weather2FeiXinDemo.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" 
+	xmlns="http://java.sun.com/xml/ns/j2ee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
+	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<!-- 配置过滤器 -->
+    <filter>
+       <description> 处理中文乱码过滤器 </description >
+       <filter-name> ProFilter </filter-name >
+       <filter-class> util.ProFilter </filter-class >
+    </filter >
+    <filter-mapping>
+       <filter-name> ProFilter </filter-name >
+       <url-pattern> /* </url-pattern ><!-- 过滤所有请求，注： tomcat5 请用 /* -->
+    </filter-mapping>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FeiXinApi</servlet-name>
+    <servlet-class>FeiXinApi</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>FeiXinApi</servlet-name>
+    <url-pattern>/servlet/FeiXinApi</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml-body>
+  <books> 
+		<user_address title="深圳"> 
+			<description> 
+				13828779956
+			</description> 
+		</user_address>
+		<user_address title="广州"> 
+			<description> 
+				15907565864
+			</description> 
+		</user_address>
+	</books>
+</xml-body>
